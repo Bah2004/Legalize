@@ -46,3 +46,56 @@ footer {
   font-size: 0.9em;
   color: #555;
 }
+/* Container do hamburguer */
+.hamburger-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Risquinhos do hamburguer */
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: white;
+  transition: 0.4s;
+}
+
+/* Mostrar "Menu" quando aproximar */
+.hamburger:hover::after {
+  content: "Menu";
+  color: white;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  font-size: 0.9rem;
+  background: #0f172a;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+/* Menu escondido inicialmente */
+nav {
+  display: none;
+  position: absolute;
+  top: 60px; /* abaixo do hamburguer */
+  right: 10px;
+  background-color: #0f172a;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+nav a {
+  display: block;
+  color: white;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

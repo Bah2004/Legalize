@@ -5,49 +5,18 @@ body {
   color: #212529;
 }
 
+/* HEADER */
 header {
-  background-color: #0a3d62;
+  position: relative;
+  background: #0f172a;
   color: white;
-  padding: 1.5em;
+  padding: 1rem;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.subtitle {
-  font-size: 1.1em;
-  font-style: italic;
-  margin-top: -0.5em;
-  margin-bottom: 1em;
-}
-
-nav a {
-  color: #f1f1f1;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 10px;
-}
-
-footer {
-  background-color: #e9ecef;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-  color: #555;
-}
-/* Container do hamburguer */
-.hamburger-container {
+/* HAMBURGUER */
+.hamburger {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -55,7 +24,6 @@ footer {
   z-index: 1000;
 }
 
-/* Risquinhos do hamburguer */
 .hamburger span {
   display: block;
   width: 25px;
@@ -65,7 +33,7 @@ footer {
   transition: 0.4s;
 }
 
-/* Mostrar "Menu" quando aproximar */
+/* Mostrar "Menu" ao passar o mouse */
 .hamburger:hover::after {
   content: "Menu";
   color: white;
@@ -78,24 +46,24 @@ footer {
   border-radius: 4px;
 }
 
-/* Menu escondido inicialmente */
-nav {
-  display: none;
+/* MENU */
+#nav-menu {
+  display: none; /* começa escondido */
   position: absolute;
-  top: 60px; /* abaixo do hamburguer */
+  top: 60px;
   right: 10px;
   background-color: #0f172a;
   border-radius: 8px;
   padding: 1rem;
 }
 
-nav a {
+#nav-menu a {
   display: block;
   color: white;
   padding: 0.5rem 0;
   text-decoration: none;
 }
 
-nav a:hover {
+#nav-menu a:hover {
   text-decoration: underline;
 }

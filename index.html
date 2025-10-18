@@ -42,18 +42,24 @@
     <p>© 2025 Legalize Moçambique — Todos os direitos reservados.</p>
   </footer>
 
-  <script>
+ <script>
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 
-hamburger.addEventListener("click", function() {
-  if (navMenu.style.display === "block") {
+// Alterna visibilidade do menu
+hamburger.addEventListener("click", () => {
+  navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
+});
+
+// Fecha o menu ao clicar em uma opção
+const menuLinks = document.querySelectorAll("#nav-menu a");
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
     navMenu.style.display = "none";
-  } else {
-    navMenu.style.display = "block";
-  }
+  });
 });
 </script>
+
 
 </body>
 </html>

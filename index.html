@@ -40,5 +40,19 @@
   <footer>
     <p>© 2025 Legalize Moçambique — Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector("nav");
+
+hamburger.addEventListener("click", () => {
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
+  } else {
+    nav.style.display = "block";
+  }
+});
+</script>
+
 </body>
 </html>

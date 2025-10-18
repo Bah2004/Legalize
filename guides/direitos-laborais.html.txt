@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Direitos Laborais | Legalize</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Legalize</h1>
+    <p class="subtitle">Conhece. Reivindica. Legaliza.</p>
+    <nav>
+      <a href="../index.html">Início</a>
+      <a href="../about.html">Sobre</a>
+      <a href="../contact.html">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Direitos Laborais em Moçambique</h2>
+    <p>Os direitos laborais estão previstos na Constituição da República de Moçambique e no Código do Trabalho. Todo o trabalhador tem direito a condições justas e seguras, salário justo, descanso, férias e protecção contra despedimento injusto.</p>
+
+    <h3>1. Direitos básicos do trabalhador</h3>
+    <ul>
+      <li>Contrato de trabalho escrito;</li>
+      <li>Pagamento pontual do salário;</li>
+      <li>Férias anuais remuneradas;</li>
+      <li>Licença de maternidade e paternidade;</li>
+      <li>Protecção contra despedimento arbitrário.</li>
+    </ul>
+
+    <h3>2. O que fazer em caso de despedimento injusto</h3>
+    <p>Deves solicitar por escrito as razões do despedimento e, se não estiveres de acordo, apresentar reclamação junto da <strong>Inspecção-Geral do Trabalho</strong> ou recorrer judicialmente no prazo legal.</p>
+
+    <h3>3. Modelos úteis</h3>
+    <p>Em breve: modelos de carta de reclamação, petição e denúncia.</p>
+
+    <p><a href="../guides/consumidor.html">➡️ Próximo guia: Direitos do Consumidor</a></p>
+  </main>
+  <footer>
+    <p>© 2025 Legalize Moçambique</p>
+  </footer>
+</body>
+</html>

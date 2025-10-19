@@ -2,27 +2,58 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Sobre | Legalize</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre - Legalize</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Legalize</h1>
-    <p class="subtitle">Conhece. Reivindica. Legaliza.</p>
-    <nav>
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">Legalize</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="nav" id="nav-menu">
       <a href="index.html">Início</a>
-      <a href="guides/direitos-laborais.html">Guias</a>
+      <a href="about.html">Sobre</a>
+      <a href="guides/">Guias</a>
       <a href="contact.html">Contacto</a>
     </nav>
   </header>
-  <main>
-    <h2>Sobre o Legalize</h2>
-    <p><strong>Legalize</strong> é uma iniciativa de estudantes e profissionais de Direito moçambicanos, criada para aproximar o conhecimento jurídico do cidadão comum.</p>
-    <p>Acreditamos que compreender a lei é o primeiro passo para garantir justiça, equidade e respeito pela dignidade humana.</p>
-    <p>Partilhamos guias práticos, modelos e contactos úteis para ajudar-te a agir de forma informada e segura.</p>
+
+  <main class="main">
+    <article class="page-content">
+      <h1>Sobre o Legalize</h1>
+      
+      <section class="content-section">
+        <h2>Missão</h2>
+        <p>O Legalize nasceu da necessidade de democratizar o acesso à informação jurídica em Moçambique. Acreditamos que o conhecimento dos direitos é o primeiro passo para uma cidadania activa e consciente.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Objectivos</h2>
+        <ul>
+          <li>Explicar conceitos jurídicos complexos em linguagem simples</li>
+          <li>Orientar cidadãos sobre como agir em situações de injustiça</li>
+          <li>Promover a educação jurídica popular</li>
+          <li>Fortaler a consciência cívica moçambicana</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h2>Público-Alvo</h2>
+        <p>Este projeto é dirigido a todos os cidadãos moçambicanos que desejam compreender melhor os seus direitos, especialmente aqueles sem formação jurídica.</p>
+      </section>
+    </article>
   </main>
-  <footer>
-    <p>© 2025 Legalize Moçambique</p>
+
+  <footer class="footer">
+    <p>© 2025 Legalize Moçambique — Todos os direitos reservados.</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

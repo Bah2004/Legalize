@@ -3,143 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Legalize - Plataforma educativa moçambicana sobre Direito, Política e Justiça. Aprenda a defender seus direitos.">
   <title>Legalize | Conhece. Reivindica. Legaliza.</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Cabeçalho com melhor semântica e acessibilidade -->
-  <header class="main-header" role="banner">
+  <header class="header">
     <div class="header-container">
-      <div class="logo" aria-label="Legalize - Página inicial">
-        <a href="index.html" class="logo-link">Legalize</a>
-      </div>
-
-      <!-- Botão hambúrguer com acessibilidade melhorada -->
-      <button 
-        class="hamburger" 
-        id="hamburger" 
-        aria-label="Abrir menu" 
-        aria-expanded="false" 
-        aria-controls="nav-menu"
-      >
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
+      <a href="index.html" class="logo">Legalize</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
-
-    <!-- Menu de navegação com semântica adequada -->
-    <nav id="nav-menu" class="nav-menu" role="navigation" aria-label="Menu principal">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link">Sobre</a></li>
-        <li class="nav-item"><a href="guias.html" class="nav-link">Guias</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
-      </ul>
+    <nav class="nav" id="nav-menu">
+      <a href="index.html">Início</a>
+      <a href="about.html">Sobre</a>
+      <a href="guides/">Guias</a>
+      <a href="contact.html">Contacto</a>
     </nav>
   </header>
 
-  <!-- Conteúdo principal com estrutura semântica -->
-  <main id="main-content" role="main">
-    <section class="hero-section">
-      <div class="container">
-        <h1 class="hero-title">Bem-vindo ao Legalize</h1>
-        <div class="hero-content">
-          <p class="hero-text">
-            <strong>Legalize</strong> é uma plataforma educativa que ajuda os cidadãos moçambicanos a compreender os seus direitos e a aprender, passo a passo, como defendê-los perante instituições, empresas e autoridades.
-          </p>
-          <p class="hero-text">
-            Explora os nossos <a href="guias.html" class="text-link">guias práticos</a> para descobrir como agir perante injustiças laborais, problemas com bancos ou violações de direitos civis.
-          </p>
-        </div>
-        <div class="hero-actions">
-          <a href="guias.html" class="btn btn-primary">Explorar Guias</a>
-          <a href="about.html" class="btn btn-secondary">Saber Mais</a>
-        </div>
+  <main class="main">
+    <section class="hero">
+      <h1>Bem-vindo ao Legalize</h1>
+      <p><strong>Legalize</strong> é uma plataforma educativa que ajuda os cidadãos moçambicanos a compreender os seus direitos e a aprender, passo a passo, como defendê-los perante instituições, empresas e autoridades.</p>
+      <p>Explora os nossos <a href="guides/">guias</a> para descobrir como agir perante injustiças laborais, problemas com bancos ou violações de direitos civis.</p>
+      <div class="cta-buttons">
+        <a href="guides/" class="btn">Ver Todos os Guias</a>
+        <a href="about.html" class="btn btn-secondary">Saber Mais</a>
       </div>
     </section>
 
-    <!-- Seção de destaques ou categorias -->
-    <section class="features-section" aria-labelledby="destaques-titulo">
-      <div class="container">
-        <h2 id="destaques-titulo" class="section-title">Áreas de Atuação</h2>
-        <div class="features-grid">
-          <article class="feature-card">
-            <h3 class="feature-title">Direitos Laborais</h3>
-            <p class="feature-description">Conheça seus direitos no trabalho e como agir em casos de assédio, despedimento ilegal ou não pagamento de salários.</p>
-            <a href="guias/direitos-laborais.html" class="feature-link">Saber mais</a>
-          </article>
-          <article class="feature-card">
-            <h3 class="feature-title">Direitos do Consumidor</h3>
-            <p class="feature-description">Aprenda a defender-se contra práticas abusivas de empresas e a reclamar eficazmente.</p>
-            <a href="guias/direitos-consumidor.html" class="feature-link">Saber mais</a>
-          </article>
-          <article class="feature-card">
-            <h3 class="feature-title">Justiça e Processos</h3>
-            <p class="feature-description">Entenda como funcionam os processos judiciais em Moçambique e quais são os seus direitos perante a lei.</p>
-            <a href="guias/justica-processos.html" class="feature-link">Saber mais</a>
-          </article>
-        </div>
+    <section class="featured-guides">
+      <h2>Guias em Destaque</h2>
+      <div class="guides-grid">
+        <article class="guide-card">
+          <h3>Direitos Laborais</h3>
+          <p>Conheça seus direitos no trabalho e como agir em casos de assédio ou despedimento ilegal.</p>
+          <a href="guides/direitos-laborais.html" class="guide-link">Ler Guia →</a>
+        </article>
+        <article class="guide-card">
+          <h3>Direitos do Consumidor</h3>
+          <p>Aprenda a defender-se contra práticas abusivas de empresas e bancos.</p>
+          <a href="guides/direitos-consumidor.html" class="guide-link">Ler Guia →</a>
+        </article>
       </div>
     </section>
   </main>
 
-  <!-- Rodapé com informações adicionais -->
-  <footer class="main-footer" role="contentinfo">
-    <div class="container">
-      <p class="footer-copyright">© 2025 Legalize Moçambique — Todos os direitos reservados.</p>
-      <p class="footer-disclaimer">Este site tem fins educativos e não substitui aconselhamento jurídico profissional.</p>
-    </div>
+  <footer class="footer">
+    <p>© 2025 Legalize Moçambique — Todos os direitos reservados.</p>
   </footer>
 
-  <!-- JavaScript melhorado -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const hamburger = document.getElementById('hamburger');
-      const navMenu = document.getElementById('nav-menu');
-      const navLinks = document.querySelectorAll('.nav-link');
-      
-      // Função para alternar o menu
-      function toggleMenu() {
-        const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
-        hamburger.setAttribute('aria-expanded', !isExpanded);
-        navMenu.classList.toggle('nav-menu--open');
-        hamburger.classList.toggle('hamburger--active');
-        
-        // Prevenir scroll do body quando menu está aberto (mobile)
-        document.body.style.overflow = navMenu.classList.contains('nav-menu--open') ? 'hidden' : '';
-      }
-      
-      // Evento de clique no hambúrguer
-      hamburger.addEventListener('click', toggleMenu);
-      
-      // Fechar menu ao clicar em um link
-      navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          navMenu.classList.remove('nav-menu--open');
-          hamburger.classList.remove('hamburger--active');
-          hamburger.setAttribute('aria-expanded', 'false');
-          document.body.style.overflow = '';
-        });
-      });
-      
-      // Fechar menu ao pressionar ESC
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && navMenu.classList.contains('nav-menu--open')) {
-          toggleMenu();
-        }
-      });
-      
-      // Fechar menu ao clicar fora (opcional)
-      document.addEventListener('click', (e) => {
-        if (navMenu.classList.contains('nav-menu--open') && 
-            !e.target.closest('.nav-menu') && 
-            !e.target.closest('.hamburger')) {
-          toggleMenu();
-        }
-      });
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
